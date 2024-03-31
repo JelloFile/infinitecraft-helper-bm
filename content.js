@@ -15,6 +15,7 @@ let sign = prompt("Would you like to export or import data? type i for import an
 
 if (sign.toLowerCase() === "e") {
 download("infinite-craft-data.json", localStorage.getItem("infinite-craft-data"));
+  location.reload()
 }
 if (sign.toLowerCase() === "i") {
 document.querySelector("html").innerHTML = `<div id='h1'><h1> As soon as you upload your file, we will redirect you back to the game.</h1>

@@ -29,7 +29,7 @@ function handleFileSelect(){
       const contents = reader.result;
       console.log(contents);
       localStorage.setItem("infinite-craft-data", contents);
-      document.getElementById("h1").innerHTML = "Give us 3 minutes to process your file...";
+     location.reload;
     };
    reader.readAsText(file);
   }</script><style>html,body{text-align:center;}</style>`

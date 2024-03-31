@@ -20,17 +20,18 @@ if (sign.toLowerCase() === "i") {
 document.querySelector("html").innerHTML = `<div id='h1'><h1> As soon as you upload your file, we will redirect you back to the game.</h1>
 <p>remember, this file WILL overwrite EVERY SINGLE thing you have on the current file. We recommend you export it before you do this.</p>
 <input type="file" id="file-input" onchange="handleFileSelect()"></div>
-<script>function handleFileSelect() {
+<script>
+function handleFileSelect(){
     const input = document.getElementById('file-input');
     const file = input.files[0];
     const reader = new FileReader();
     reader.onload = function() {
       const contents = reader.result;
-      console.log(contents)
-      localStorage.setItem("infinite-craft-data", contents)
-      document.getElementById("h1").innerHTML = "Give us 3 minutes to process your file..."
+      console.log(contents);
+      localStorage.setItem("infinite-craft-data", contents);
+      document.getElementById("h1").innerHTML = "Give us 3 minutes to process your file...";
     };
-   reader.readAsText(file)
+   reader.readAsText(file);
   }</script><style>html,body{text-align:center;}</style>`
 }
 

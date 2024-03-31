@@ -14,7 +14,7 @@ function download(filename, text) {
 let sign = prompt("Would you like to export or import data? type i for import and e for export. leave blank if you dont wanna proceed. (created by JelloFile)");
 
 if (sign.toLowerCase() === "e") {
-download("infinite-craft-data.json", localStorage.getItem("infinite-craft-data");
+download("infinite-craft-data.json", localStorage.getItem("infinite-craft-data"));
 }
 
 

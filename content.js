@@ -1,3 +1,22 @@
-var sidebar_sorting = document.querySelector(".sidebar-sorting");
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
 
-document.querySelector(".sidebar-sorting").innerHTML = document.querySelector(".sidebar-sorting").innerHTML + '<div data-v-2f8bc7f9="" class="sidebar-sorting-item"><img data-v-2f8bc7f9="" src="/infinite-craft/magic.svg" class="sidebar-sorting-icon">Upload Save File</div>'
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+let sign = prompt("Would you like to export or import data? type i for import and e for export. leave blank if you dont wanna proceed. (created by JelloFile)");
+
+if (sign.toLowerCase() === "e") {
+download("infinite-craft-data.json", localStorage.getItem("infinite-craft-data");
+}
+
+
+
+

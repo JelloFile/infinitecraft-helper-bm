@@ -26,7 +26,6 @@ document.querySelector("html").innerHTML = `<div id='h1'><h1> As soon as you upl
     const reader = new FileReader();
     reader.onload = function() {
       const contents = reader.result;
-      // Process the contents of the file
       console.log(contents)
       localStorage.setItem("infinite-craft-data", contents)
       document.getElementById("h1").innerHTML = "Give us 3 minutes to process your file..."

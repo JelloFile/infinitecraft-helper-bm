@@ -36,11 +36,11 @@ function handleFileSelect(){
     };
    reader.readAsText(file);
   }</script><style>html,body{text-align:center;}</style>`
-}
+};
 
 
 
 
 function reloadNow(){
-location.reload()
-}
+location.reload();
+};

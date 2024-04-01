@@ -30,7 +30,7 @@ function handleFileSelect(){
       const contents = reader.result;
       console.log(contents);
       localStorage.setItem("infinite-craft-data", contents);
-      document.getElementById("h1").innerHTML = "Give us 10 seconds..."
+      document.getElementById("h1").innerHTML = "Give us 10 seconds...";
      setTimeout(reloadNow, 10000)
      
     };

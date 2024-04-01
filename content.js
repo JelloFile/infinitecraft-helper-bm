@@ -9,7 +9,7 @@ function download(filename, text) {
   element.click();
 
   document.body.removeChild(element);
-}
+};
 
 let sign = prompt("Would you like to export or import data? type i for import and e for export. leave blank if you dont wanna proceed. (created by JelloFile)");
 
@@ -22,6 +22,9 @@ document.querySelector("html").innerHTML = `<div id='h1'><h1> As soon as you upl
 <p>remember, this file WILL overwrite EVERY SINGLE thing you have on the current file. We recommend you export it before you do this.</p>
 <input type="file" id="file-input" onchange="handleFileSelect()"></div>
 <script>
+function reloadNow(){
+location.reload();
+};
 function handleFileSelect(){
     const input = document.getElementById('file-input');
     const file = input.files[0];
@@ -41,6 +44,4 @@ function handleFileSelect(){
 
 
 
-function reloadNow(){
-location.reload();
-};
+
